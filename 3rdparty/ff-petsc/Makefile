@@ -303,6 +303,7 @@ WHERE-all:Makefile Make-petsc-download.mk
 endif
 $(SRCDIR)/tag-tar:$(PACKAGE)
 	-tar xzf $(PACKAGE)
+	mv petsc-jolivet-feature-download-htool petsc-3.15.0
 ifeq ($(WIN32DLLTARGET),)
 	cd petsc-$(VERSION) && patch -p1 < ../petsc-metis.patch && cd -
 endif
