@@ -11,6 +11,7 @@ using namespace std;
 using std::string;
 using std::vector;
 typedef long Int4;
+extern long verbosity;
 
 class WriteXdmf {
  private:
